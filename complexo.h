@@ -27,5 +27,13 @@ typedef struct{
     else{cout << "\t   Subtracao = " << subReal << subImg << "i" << endl;}
   }
 
-  
+  void Mult(int img1, int img2, int real1, int real2){
+    //(a+bi)(c+di) ->> ac + adi + cbi + bidi onde (i^2 = -1)
+    int multReal = (real1 * real2) + (img1 * img2 * (-1));
+    int multImg = (real1 * img2) + (img1 * real2);
+
+    if (multImg > 0){cout << "   Multiplicacao = " << multReal << "+" << multImg << "i" << endl;}
+    else{cout << "   Multiplicacao = " << multReal << multImg << "i" << endl;}
+  }
+
 }tComplexos;
