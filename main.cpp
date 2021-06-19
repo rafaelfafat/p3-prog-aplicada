@@ -14,4 +14,6 @@ int main() {
 
   nComplexo.print(img1, img2, real1, real2);
 
+  nComplexo.Soma(img1, img2, real1, real2);
+
 }
