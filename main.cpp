@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include "complexo.h"
 
 using namespace std;
@@ -16,6 +15,7 @@ int main() {
   cout << "Digite a parte imaginaria do segundo numero: "; cin >> img2;
 
   nComplexo.print(img1, img2, real1, real2);
+  nComplexo.Modulo(img1, img2, real1, real2);
   nComplexo.Soma(img1, img2, real1, real2);
   nComplexo.Sub(img1, img2, real1, real2);
   nComplexo.Mult(img1, img2, real1, real2);
