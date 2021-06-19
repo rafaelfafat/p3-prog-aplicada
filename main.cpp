@@ -1,9 +1,12 @@
 #include <iostream>
+#include <iomanip>
 #include "complexo.h"
 
 using namespace std;
 
+
 int main() {
+  
   tComplexos nComplexo;
   int real1, img1, real2, img2;
   
@@ -16,5 +19,6 @@ int main() {
   nComplexo.Soma(img1, img2, real1, real2);
   nComplexo.Sub(img1, img2, real1, real2);
   nComplexo.Mult(img1, img2, real1, real2);
+  nComplexo.Div(img1, img2, real1, real2);
 
 }
